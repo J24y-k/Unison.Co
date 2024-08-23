@@ -116,27 +116,36 @@ body, html {
 
   /*Section 2*/
 
-  #welcome-message .container {
-    display: flex;
-    align-items: center;
-  }
+#welcome-message {
+  background-color: #f4f1ed;
+  padding: 60px 0;
+}
 
-  #welcome-message .text {
-    width: 55%;
-    margin: 3%;
-    margin-right: 8%;
-  }
+#welcome-message .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  #welcome-message h2 {
-    color: #623e2a;
-    font-size: 5rem;
-    font-weight: lighter;
-  }
+#welcome-message .text {
+  width: 60%;
+}
 
-  #welcome-message p {
-    color: #623e2a;
-    font-size: 2rem;
-  }
+#welcome-message h2 {
+  font-size: 32px;
+  color: #623e2a;
+  font-family: 'CocoSharp';
+}
+
+#welcome-message p {
+  font-size: 18px;
+  color: #555;
+  font-family: 'CocoSharp';
+}
+
+#welcome-message img {
+  border-radius: 10px;
+}
 
 
 /*Section 3*/
