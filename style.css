@@ -26,14 +26,10 @@ body, html {
     box-sizing: border-box;
   }
 
-
 .container {
   margin-top: 30%;
   margin-bottom: 30%;
 }
-
-
-
 
 /*Section 1*/
 
@@ -145,7 +141,6 @@ body, html {
 #welcome-message img {
   border-radius: 10px;
 }
-
 
 /*Section 3*/
 
