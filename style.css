@@ -317,7 +317,7 @@ body, html {
 }
 
 
-/* Section 7 */
+/* Section 6 */
 
 #clothing-coming-soon .container {
   position: relative;
@@ -388,12 +388,13 @@ body, html {
 }
 
 #clothing-coming-soon .slogan {
-  font-size: 40px;
+  font-size: 20px;
   text-align: center;
+  margin-top: -10%;
+  margin-left: 35%;
 }
 
-
-/* section 8 */
+/* section 7 */
 
 #about-us {
   display: flex;
