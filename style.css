@@ -31,6 +31,48 @@ body, html {
   margin-bottom: 30%;
 }
 
+/* Top Navigation */
+
+#topnav {
+  position: relative;
+  width: 100%;
+}
+
+#background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#background:hover {
+  background-color: #000000;
+  opacity: 0.1;
+}
+
+#topnav #container {
+  width: 95%;
+  margin-left: 2%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#topnav #container .level3-container {
+  display: flex;
+}
+
+#topnav #container #left-part {
+  width: 500px;
+}
+
+#topnav #container  #right-part {
+  width: 200px;
+}
+
+#topnav #container .content-margin {
+  margin-left: 20%;
+}
+
 /*Section 1*/
 
 #background-logo {
