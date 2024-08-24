@@ -1,116 +1,109 @@
 @font-face {
-    font-family: 'CocoSharp';
-    src: url('./fonts/Coco-Sharp-Regular-trial.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'CocoSharp';
+  src: url('./fonts/Coco-Sharp-Regular-trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: 'CatchyMager';
-    src: url('./fonts/CatchyMager-Normal.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
+@font-face {
+  font-family: 'CatchyMager';
+  src: url('./fonts/CatchyMager-Normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body, html {
   font-size: 16px;
-
   margin: 0;
   padding: 0;
   height: 100%;
   background-color: #f4f1ed;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-
-.container {
-  margin-top: 30%;
-  margin-bottom: 30%;
 }
 
-/*Section 1*/
+* {
+  box-sizing: border-box;
+}
 
+/* General container spacing */
+.section {
+  padding: 60px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*Section 1 - Welcome Section*/
 #background-logo {
   position: relative;
   left: 20%;
   width: 60%;
-
   filter: blur(3px);
   opacity: 0.5;
 }
 
-  #forward-text {
-    z-index: 2;
-    position: absolute;
-    width: 90%;
-    height: auto;
-    top: 10%;
-    left: 5%;
-    
-    text-align: center;
-  }
+#forward-text {
+  z-index: 2;
+  position: absolute;
+  width: 90%;
+  top: 15%;
+  left: 5%;
+  text-align: center;
+}
 
-  #forward-text #text-one {
-    color: #623e2a;
-    font-family: 'CocoSharp', sans-serif;
-    font-weight: bold;
-    font-size: 1.5rem;
+#forward-text #text-one {
+  color: #623e2a;
+  font-family: 'CocoSharp', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+}
 
-    margin-bottom: 0px;
-  }
+#forward-text #main-text {
+  font-size: 10rem;
+  font-family: 'CatchyMager', sans-serif;
+  margin-top: 0px;
+  margin-bottom: -2rem;
+}
 
-  #forward-text #main-text {
-    font-size: 10rem;
-    font-family: 'CatchyMager', sans-serif;
+#forward-text #text-two {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 3rem;
+  font-weight: lighter;
+}
 
-    margin-top: 0px;
-    margin-bottom: -2rem;
-  }
+#forward-text #learn-more {
+  margin-top: 3rem;
+  width: 10%;
+  height: 3rem;
+  padding: 10px 20px;
+  background-color: #623e2a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 100%;
+}
 
-  #forward-text #text-two {
-    margin-top: 0px;
-    margin-bottom: 0px;
+#learn-more:hover {
+  background-color: #555;
+}
 
-    font-size: 3rem;
-    font-weight: lighter;
-  }
+/* Video Section */
+#video-ad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
 
-  #forward-text #learn-more {
-    margin-top: 3rem;
-    width: 10%;
-    height: 3rem;
+#video-ad video {
+  width: 60%;
+}
 
-    padding: 10px 20px;
-
-    background-color: #623e2a;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 100%;
-  }
-
-  #learn-more:hover {
-    background-color: #555;
-  }
-
-  /* video section */
-
-  #video-ad {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0;
-  }
-
-  #video-ad video {
-    position: relative;
-  }
-
-  /*Section 2*/
-
+/* Section 2 - Welcome Message */
 #welcome-message {
   background-color: #f4f1ed;
   padding: 60px 0;
@@ -140,35 +133,46 @@ body, html {
 
 #welcome-message img {
   border-radius: 10px;
+  width: 400px;
 }
 
-/*Section 3*/
-
+/* Section 3 - Top Sales */
 #top-sales .container {
-  margin: 0;
+  margin: 0 auto;
+  padding: 60px 0;
 }
 
 #top-sales h2 {
   font-size: 2rem;
   text-align: center;
-
-  color: #623e2a;
+  color: white;
   font-family: 'CocoSharp';
+  margin-bottom: 40px;
 }
 
-#top-sales .sneaker {
-  width: 30%;
-  margin: 3%;
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: #623e2a;
+  border-radius: 45px;
+  padding: 50px;
+}
+
+.sneakers-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: calc(100% * (number of sneakers to display));
+}
+
+.sneaker {
+  width: 50%; 
+  margin: 0 25px;
 }
 
 #top-sales img {
   width: 100%;
   border-radius: 10px;
-}
-
-#top-sales .sneakers-container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .sneaker-info-container {
@@ -179,10 +183,6 @@ body, html {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.sneaker-info {
-  margin-left: 5%;
-}
-
 .sneaker-info p {
   color: #623e2a;
   margin: 5px 0;
@@ -190,12 +190,12 @@ body, html {
 }
 
 .sneaker-info .brand {
-  font-size: 2rem;
+  font-size: 20px;
   color: #333;
 }
 
 .sneaker-info .name {
-  font-size: 1.5rem;
+  font-size: 10px;
   color: #777;
 }
 
@@ -204,73 +204,95 @@ body, html {
   font-weight: bold;
 }
 
-/*Section 4*/
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
 
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Section 4 - Shop More */
 #shop-more {
   background-color: #f4f1ed;
   padding: 60px 0;
 }
 
 #shop-more h2 {
+  font-size: 2rem;
   text-align: center;
-  font-size: 32px;
   color: #623e2a;
   font-family: 'CocoSharp';
+  margin-bottom: 40px;
 }
 
 .sneaker-slider {
   display: flex;
-  justify-content:space-evenly ;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .sneaker-slider .sneaker {
-  width: 30%;
-  text-align: center;
+  width: 45%;
+  margin-bottom: 40px;
 }
 
-.sneaker-slider .sneaker img {
+.sneaker-slider img {
   width: 100%;
   border-radius: 10px;
 }
 
-#view-more {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 20px;
-  background-color: #623e2a;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-#view-more:hover {
-  background-color: #555;
-}
-
-/* Section 5 */
-
+/* Section 5 - Promos */
 #promos {
-  margin-top: 20px;
-  background-color: #f4f1ed;
   padding: 60px 0;
 }
 
 #promos h2 {
+  font-size: 2rem;
   text-align: center;
-  font-size: 32px;
-  color: #623e2a;
+  color: white;
   font-family: 'CocoSharp';
+  margin-bottom: 40px;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: #623e2a;
+  border-radius: 15px;
+  padding: 20px;
 }
 
 .promo-container {
   display: flex;
-  justify-content: space-evenly; /* Space items evenly */
-  margin-top: 20px;
+  transition: transform 0.5s ease-in-out;
+  
+  width: calc(100% * (number of promos to display));
 }
 
 .promo {
-  width: 22%; /* Reduced width for smaller size */
-  text-align: center;
+  width: 30%; 
+  margin: 0 15px;
 }
 
 .promo img {
@@ -282,38 +304,33 @@ body, html {
   background-color: #fff;
   border-radius: 10px;
   padding: 10px;
-  margin-top: -20px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.promo-info p {
-  margin: 5px 0;
-  font-family: 'CocoSharp';
-}
-
-.promo-info .title {
-  font-size: 18px;
-  color: #333;
-}
-
-.promo-info .description {
-  font-size: 16px;
-  color: #777;
-}
-
-#view-more {
-  margin-left: 46%;
-  margin-top: 3%;
-  padding: 10px 20px;
-  font-size: 20px;
-  background-color: #623e2a;
-  color: #fff;
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
   border: none;
+  padding: 10px;
   cursor: pointer;
+  border-radius: 50%;
 }
 
-#view-more:hover {
-  background-color: #555;
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 
@@ -323,18 +340,18 @@ body, html {
   position: relative;
   height:fit-content ;
   margin-bottom: 0px;
-
+  
   color: white;
-}
-
-#clothing-coming-soon img {
+  }
+  
+  #clothing-coming-soon img {
   width: 90%;
   position: relative;
   margin-left: 4%;
   opacity: 0.8;
-}
-
-#clothing-coming-soon .main-content {
+  }
+  
+  #clothing-coming-soon .main-content {
   z-index: 2;
   width: 100%;
   height: 100%;
@@ -342,58 +359,57 @@ body, html {
   align-content: center;
   top: 0px;
   background-color: #613f2d7a;
-}
-
-#clothing-coming-soon .text {
+  }
+  
+  #clothing-coming-soon .text {
   width: 90%;
   position: relative;
   left: 5%;
-}
-
-#clothing-coming-soon h1 {
+  }
+  
+  #clothing-coming-soon h1 {
   text-align: center;
   font-size: 60px;
-}
-
-#clothing-coming-soon .comments {
+  }
+  
+  #clothing-coming-soon .comments {
   margin-top: 10%;
   display: flex;
-
-}
-
-#clothing-coming-soon .comment-block {
+  
+  }
+  
+  #clothing-coming-soon .comment-block {
   margin-left: 6%;
   width: 30%;
-}
-
-#clothing-coming-soon .comment-block p {
+  }
+  
+  #clothing-coming-soon .comment-block p {
   font-size: 25px;
-}
-
-#clothing-coming-soon .comment-block .dash {
+  }
+  
+  #clothing-coming-soon .comment-block .dash {
   font-weight: bold; 
   font-size: 50px; 
   margin-top: 30%;
   margin-bottom: -5%;
-}
-
-#clothing-coming-soon .comment-block .commentator {
+  }
+  
+  #clothing-coming-soon .comment-block .commentator {
   font-weight: bold;
-}
-
-#clothing-coming-soon .slogan-container {
+  }
+  
+  #clothing-coming-soon .slogan-container {
   margin-left: 5%;
   margin-top: 10%;
   width: 90%;
-}
-
-#clothing-coming-soon .slogan {
+  }
+  
+  #clothing-coming-soon .slogan {
   font-size: 20px;
   text-align: center;
   margin-top: -10%;
   margin-left: 35%;
-}
-
+  }
 /* section 7 */
 
 #about-us {
@@ -402,20 +418,20 @@ body, html {
   align-items: center;
   color: white;
   background-color: #623e2a;
-}
-
-#about-us .container {
+  }
+  
+  #about-us .container {
   width: 95%;
   margin-top: -60px;
-}
-
-#about-us #titre {
+  }
+  
+  #about-us #titre {
   margin-top: 5%;
   font-family: 'CatchyMager', sans-serif;
   font-size: 32px; 
-}
-
-#about-us-container {
+  }
+  
+  #about-us-container {
   width: 100%;
   margin-bottom: 5%;
   display: flex;
@@ -423,30 +439,30 @@ body, html {
   align-items: center;
   border-style: solid;
   border-width: 1px;
-}
-
-#about-us-container #inline-container {
+  }
+  
+  #about-us-container #inline-container {
   width: 95%;
   height: 80%;
-}
-
-#about-us-container #about-us-title {
+  }
+  
+  #about-us-container #about-us-title {
   font-size: 20px; 
   font-weight: 800;
-}
-
-#about-us-container #content {
+  }
+  
+  #about-us-container #content {
   font-size: 15px; 
   line-height: 1.5; 
   font-weight: lighter;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-#about-us #boxes {
+  }
+  
+  #about-us #boxes {
   display: flex;
-}
-
-#about-us .box {
+  }
+  
+  #about-us .box {
   width: 20%;
   border-width: 1px;
   border-style: solid;
@@ -454,53 +470,53 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#about-us .box .inline-container {
+  }
+  
+  #about-us .box .inline-container {
   width: 90%;
   height: 90%;
-}
-
-#about-us .box-titles {
+  }
+  
+  #about-us .box-titles {
   font-size: 15px;
   font-weight: 700;
-}
-
-#about-us .box-text {
+  }
+  
+  #about-us .box-text {
   font-size: 12px;
   font-weight: 200;
-}
-
-#about-us .social-icons {
+  }
+  
+  #about-us .social-icons {
   display: flex;
   justify-content: center; 
   align-items: center; 
   gap: 15px; 
   margin-top: 20px; 
-}
-
-#about-us .social-icons img {
+  }
+  
+  #about-us .social-icons img {
   width: 30px; 
   height: 30px; 
   object-fit: contain; 
-}
-
-
-
-/* reviews */
-
-#reviews {
+  }
+  
+  
+  
+  /* reviews */
+  
+  #reviews {
   height: 400px;
-
+  
   text-align: center;
   padding: 100px 20px;
-}
-
-#reviews h2 {
+  }
+  
+  #reviews h2 {
   font-size: 18px;
-}
-
-#reviews #feedback {
+  }
+  
+  #reviews #feedback {
   width: 60%;
   height: 50%;
   padding: 15px;
@@ -508,8 +524,9 @@ body, html {
   border: 0px solid #623e2a;
   border-radius: 2px;
   resize: none;
-}
-
-#reviews #feedback::placeholder {
+  }
+  
+  #reviews #feedback::placeholder {
   color: #999;
-}
+  }
+  
