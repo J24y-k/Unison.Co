@@ -470,10 +470,11 @@ body, html {
   display: flex;
   transition: transform 0.5s ease-in-out;
   width: calc(100% * (number of promos to display));
+  justify-content: center;
 }
 
 .promo {
-  width: 30%; 
+  width: 28%; 
   margin: 0 15px;
 }
 
@@ -497,9 +498,8 @@ body, html {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  padding: 10px;
+  padding: 17px;
   cursor: pointer;
-  border-radius: 50%;
 }
 
 .carousel-prev {
@@ -562,7 +562,7 @@ body, html {
   }
   
   #clothing-coming-soon .comment-block {
-  margin-left: 6%;
+  margin-left: 4%;
   width: 30%;
   }
   
@@ -591,7 +591,8 @@ body, html {
   font-size: 20px;
   text-align: center;
   margin-top: -10%;
-  margin-left: 35%;
+  margin-left: 17%;
+  width: 69%;
   }
 /* section 7 */
 
