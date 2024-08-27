@@ -4,29 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Unison Co. - Your Style, Your Voice, Our Community</title>
 </head>
 
+<!-- Section 1-->
 <body>
 
     <!-- top navigation -->
     <div class="topnav">
-
         <div id="container">
-
             <div id="left-side" class="container-sides">
-                <div id="hum-menu">
-                    <div id="myLinks">
-                        <a href="#news">News</a>
-                        <a href="#contact">Contact</a>
-                        <a href="#about">About</a>
-                    </div>
-                    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-                        <i class="fas fa-bars"></i>
-                    </a>
-                </div>
-
                 <a href="#Home" id="title" class="left-active">
                     UNISON
                 </a>
@@ -46,16 +33,9 @@
                     <div id="profile-logo" class="right-active"></div>
                 </a>    
             </div>
-            
-            
-
         </div>
-        
     </div>
-    <script src="script.js"></script>
 
-
-    <!-- welcome message -->
     <section id="welcome" class="section">
 
         <div class="main-container">
@@ -74,8 +54,8 @@
     
     <section id="video-ad">
         <div id="video-size">
-            <video width="100%" controls>
-                <source src="Videos/This is Off the Wall _ VANS.mp4" type="video/mp4">
+            <video width="60%" controls>
+                <source src="Videos/video ad.mp4" type="video/mp4">
             </video>
         </div>
     </section>
@@ -99,116 +79,213 @@
             <img style="border-radius: 10px;" src="Images/good.jpg" alt="Promotional image" width="400">
         </div>
     </section>
-
-    <section id="top-sales">
-        <div class="container">
+<!-- SECTION 3 Top sales-->
+<section id="top-sales">
+    <div class="container">
+       
+        <div class="carousel-container">
             <h2>Top Sales</h2>
-
             <div class="sneakers-container">
                 <div class="sneaker" data-price="50">
-                    <img src="Images/AF1 B1.jpg" alt="Sneaker 1" >
-
+                    <img src="Images/AF1 B1.jpg" alt="Sneaker 1">
                     <div class="sneaker-info-container">
                         <div class="sneaker-info">
                             <p class="brand">Black Airforce 1</p>
                             <p class="name">Rope Laces</p>
-                            <p price class="price">R1 399.99</p>
+                            <p class="price">R1 399.99</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="sneaker" data-price="50">
-                    <img src="Images/AF1 P1.jpg"" alt="Sneaker 1" >
-
+                    <img src="Images/AF1 P1.jpg" alt="Sneaker 2">
                     <div class="sneaker-info-container">
                         <div class="sneaker-info">
                             <p class="brand">Airforce 1</p>
                             <p class="name">Valentine Pink</p>
-                            <p price class="price">R1 299.99</p>
+                            <p class="price">R1 299.99</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="sneaker" data-price="50">
-                    <img src="Images/campus 1.jpg" alt="Sneaker 1" >
-
+                    <img src="Images/campus 1.jpg" alt="Sneaker 3">
                     <div class="sneaker-info-container">
                         <div class="sneaker-info">
                             <p class="brand">New Balance</p>
                             <p class="name">Suede</p>
-                            <p price class="price">R1 499.99</p>
+                            <p class="price">R1 499.99</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Add more sneakers here as needed -->
             </div>
+
+            <!-- Arrows for sliding -->
+            <button class="carousel-prev">&#10094;</button>
+            <button class="carousel-next">&#10095;</button>
         </div>
-        
-    </section>
+    </div>
+</section>
 
-    <section id="shop-more">
-        <div class="container">
-            <h2>Shop More</h2>
+<!--Section 4 Shop more-->
 
-            <div class="sneaker-slider">
-                <div class="sneaker" data-price="50">
-                    <img src="Images/AF1 W1.jpg" alt="Sneaker 1">
+<section id="shop-more">
+    <div class="container">
+        <h2>Shop More</h2>
 
-                    <div class="sneaker-info-container">
-                        <div class="sneaker-info">
-                            <p class="brand">Airforce 1</p>
-                            <p class="name">white</p>
-                            <p class="price">R999.99</p> 
-                        </div>
-                    </div>
+        <div class="sneaker-grid">
+            <div class="sneaker">
+                <div class="sneaker-header">
+                    <div class="color-indicator" style="background-color: #fff;"></div>
+                    <div class="save-tag">Save</div>
                 </div>
-
-                <div class="sneaker" data-price="50">
-                    <img src="Images/dunks 1.jpg" alt="Sneaker 2">
-
-                    <div class="sneaker-info-container">
-                        <div class="sneaker-info">
-                            <p class="brand">Jordan 1 </p>
-                            <p class="name">Low wolf</p>
-                            <p class="price">R1 399.99</p> 
-                        </div>
-                    </div>
+                <img src="Images/AF1 W1.jpg" alt="Sneaker 1">
+                <div class="sneaker-footer">
+                    <p class="price">R999.99</p>
+                    <button class="buy-now">Buy Now</button>
                 </div>
             </div>
-        </section>
+            
+            <div class="sneaker">
+                <div class="sneaker-header">
+                    <div class="color-indicator" style="background-color: #fff;"></div>
+                    <div class="save-tag">Save</div>
+                </div>
+                <img src="Images/AF1 W1.jpg" alt="Sneaker 2">
+                <div class="sneaker-footer">
+                    <p class="price">R999.99</p>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="sneaker">
+                <div class="sneaker-header">
+                    <div class="color-indicator" style="background-color: #fff;"></div>
+                    <div class="save-tag">Save</div>
+                </div>
+                <img src="Images/AF1 W1.jpg" alt="Sneaker 2">
+                <div class="sneaker-footer">
+                    <p class="price">R999.99</p>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="sneaker">
+                <div class="sneaker-header">
+                    <div class="color-indicator" style="background-color: #fff;"></div>
+                    <div class="save-tag">Save</div>
+                </div>
+                <img src="Images/AF1 W1.jpg" alt="Sneaker 2">
+                <div class="sneaker-footer">
+                    <p class="price">R999.99</p>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="sneaker">
+                <div class="sneaker-header">
+                    <div class="color-indicator" style="background-color: #fff;"></div>
+                    <div class="save-tag">Save</div>
+                </div>
+                <img src="Images/AF1 W1.jpg" alt="Sneaker 2">
+                <div class="sneaker-footer">
+                    <p class="price">R999.99</p>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="sneaker">
+                <div class="sneaker-header">
+                    <div class="color-indicator" style="background-color: #fff;"></div>
+                    <div class="save-tag">Save</div>
+                </div>
+                <img src="Images/AF1 W1.jpg" alt="Sneaker 2">
+                <div class="sneaker-footer">
+                    <p class="price">R999.99</p>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="sneaker">
+                <div class="sneaker-header">
+                    <div class="color-indicator" style="background-color: #fff;"></div>
+                    <div class="save-tag">Save</div>
+                </div>
+                <img src="Images/AF1 W1.jpg" alt="Sneaker 2">
+                <div class="sneaker-footer">
+                    <p class="price">R999.99</p>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="sneaker">
+                <div class="sneaker-header">
+                    <div class="color-indicator" style="background-color: #888;"></div>
+                    <div class="save-tag">Save</div>
+                </div>
+                <img src="Images/dunks 1.jpg" alt="Sneaker 3">
+                <div class="sneaker-footer">
+                    <p class="price">R1 399.99</p>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div> 
+            <!-- Add more sneaker containers here --> 
+        </div>
+
+        <button id="view-more">View More</button>
+        <div id="more-sneakers" class="hidden">
+        </div>
+    </div>
+</section>
 
     <!-- Sixth Page: Promos and Offers -->
     <section id="promos">
-        <div id="promos">
+        <div class="container">
             <h2>Promos and Offers</h2>
-            <div class="promo-container">
-              <div class="promo">
-                <img src="Images/airmax90 1.jpg"" alt="Promo 1">
-                <div class="promo-info-container">
-                  <p class="title">Low Dunks</p>
-                  <p class="description">Buy any two of these for only R2 500</p>
+    
+            <div class="carousel-container">
+                <div class="promo-container">
+                    <div class="promo">
+                        <img src="Images/this.jpg" alt="Promo 1">
+                        <div class="promo-info-container">
+                            <p class="title">Low Dunks</p>
+                            <p class="description">Buy any two of these for only R2 500</p>
+                        </div>
+                    </div>
+    
+                    <div class="promo">
+                        <img src="Images/this.jpg" alt="Promo 2">
+                        <div class="promo-info-container">
+                            <p class="title">Low Dunks</p>
+                            <p class="description">Buy any two of these for only R2 500</p>
+                        </div>
+                    </div>
+    
+                    <div class="promo">
+                        <img src="Images/this.jpg" alt="Promo 3">
+                        <div class="promo-info-container">
+                            <p class="title">Low Dunks</p>
+                            <p class="description">Buy any two of these for only R2 500</p>
+                        </div>
+                    </div>
+    
+                    <!-- Add more promos here as needed -->
                 </div>
-              </div>
-              <div class="promo">
-                <img src="Images/this.jpg" alt="Promo 2">
-                <div class="promo-info-container">
-                  <p class="title">Low Dunks</p>
-                  <p class="description">Buy any two of these for only R2 500</p>
-                </div>
-              </div>
-              <div class="promo">
-                <img src="Images/this.jpg" alt="Promo 3">
-                <div class="promo-info-container">
-                  <p class="title">Low Dunks</p>
-                  <p class="description">Buy any two of these for only R2 500</p>
-                </div>
-              </div>
+    
+                <!-- Arrows for sliding -->
+                <button class="carousel-prev">&#10094;</button>
+                <button class="carousel-next">&#10095;</button>
             </div>
+    
             <button id="view-more">View More</button>
-          </div>
-          
+        </div>
     </section>
+    
+    
 
-    <!-- Seventh Page: Clothing Brand Coming Soon -->
+    <!-- Seventh Page: Clothing -->
     <section id="clothing-coming-soon">
         <div class="container">
             <img src="Images/squad.jpg" >
