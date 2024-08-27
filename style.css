@@ -20,6 +20,7 @@ body, html {
   background-color: #f4f1ed;
 }
 
+
 * {
   box-sizing: border-box;
 }
@@ -341,7 +342,6 @@ body, html {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-
 /* Section 4 - Shop More */
 #shop-more {
   background-color: #f4f1ed;
@@ -381,6 +381,8 @@ body, html {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+  
+
 }
 
 .save-tag {
@@ -437,6 +439,7 @@ body, html {
 
 #view-more:hover {
   background-color: #42301a;
+
 }
 
 .hidden {
