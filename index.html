@@ -12,20 +12,43 @@
 
     <!-- top navigation -->
     <div class="topnav">
+
         <div id="container">
-            <div id="hum-menu">
-                <div id="myLinks">
-                    <a href="#news">News</a>
-                    <a href="#contact">Contact</a>
-                    <a href="#about">About</a>
+
+            <div id="left-side" class="container-sides">
+                <div id="hum-menu">
+                    <div id="myLinks">
+                        <a href="#news">News</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#about">About</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                        <i class="fas fa-bars"></i>
+                    </a>
                 </div>
-                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-                    <i class="fas fa-bars"></i>
+
+                <a href="#Home" id="title" class="left-active">
+                    UNISON
                 </a>
+                    <input type="text" placeholder="Search.." id="search-container">
+                    <button id="search-logo"></button>
             </div>
             
 
-            <a href="#home" class="active">Home</a>
+            <div id="right-side" class="container-sides">
+                <a href="#favorite">
+                    <div id="favorite-logo" class="right-active"></div>
+                </a>
+                <a href="#Cart">
+                    <div id="cart-logo" class="right-active"></div>
+                </a>
+                <a href="#Profile">
+                    <div id="profile-logo" class="right-active"></div>
+                </a>    
+            </div>
+            
+            
+
         </div>
         
     </div>
@@ -51,8 +74,8 @@
     
     <section id="video-ad">
         <div id="video-size">
-            <video width="60%" controls>
-                <source src="Videos/video ad.mp4" type="video/mp4">
+            <video width="100%" controls>
+                <source src="Videos/This is Off the Wall _ VANS.mp4" type="video/mp4">
             </video>
         </div>
     </section>

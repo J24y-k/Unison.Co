@@ -34,50 +34,125 @@ body, html {
 /* Top Navigation */
 .topnav {
   overflow: hidden;
-  background-color: #333;
   position: relative;
+  width: 100%;
 }
 
-/* inner container */
 .topnav #container {
   position: relative;
+  display:flex ;
+  justify-content: space-between;
   width: 96%;
   margin-left: 2%;
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #container .container-sides {
+  display: flex;
+  align-items: center;
+}
+
 .topnav #myLinks {
   display: none;
 }
 
-/* Style navigation menu links */
 .topnav a {
-  color: white;
-  padding: 14px 16px;
+  color: #000;
+  padding: 12px 16px;
   text-decoration: none;
   font-size: 17px;
-  display: block;
+}
+
+.topnav #hum-menu a{
+  color: white;
 }
 
 /* Style the hamburger menu */
 .topnav a.icon {
   background: black;
   display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
+.topnav #hum-menu a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Style the active link (or home/logo) */
-.active {
-  background-color: #04AA6D;
+.topnav #search-container {
+  background-color: #ddd;
+  width: 250px;
+  height: 30px;
+
+  margin-left: 5%;
+  border-style: none;
+}
+
+.topnav #search-logo {
+  position: relative;
+  background-image: url('./Images/icons/search_black_24dp.png');
+  background-size: cover;
+  border-style: none;
+
+  width: 30px;
+  height: 30px;
+  margin-left: 1%;
+}
+
+.topnav #search-logo:hover {
+  background-image: url('./Images/icons/search_brown_24dp.png');
+  transition: background-image 0.3s ease-in-out;
+
+  cursor:pointer ;
+}
+
+.left-active {
+  margin-left: 20px;
   color: white;
+}
+
+#left-side #title {
+  font-family: 'CatchyMager', sans-serif;
+  font-size: 40px;
+
+  padding: 0px;
+  padding-top: 10px;
+}
+
+.right-active {
+  margin-left: 20px;
+
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+#favorite-logo {
+  background-image: url('./Images/icons/favorite_black_24dp.png');
+  background-size: cover;
+}
+
+#favorite-logo:hover {
+  background-image: url('./Images/icons/favorite_brown_24dp.png');
+  transition: background-image 0.3s ease-in-out;
+}
+
+#cart-logo {
+  background-image: url('./Images/icons/shopping_cart_black_24dp.png');
+  background-size: cover;
+}
+
+#cart-logo:hover {
+  background-image: url('./Images/icons/shopping_cart_brown_24dp.png');
+  transition: background-image 0.3s ease-in-out;
+}
+
+#profile-logo {
+  background-image: url('./Images/icons/profile_black_24dp.png');
+  background-size: cover;
+}
+
+#profile-logo:hover {
+  background-image: url('./Images/icons/profile_brown_24dp.png');
+  transition: background-image 0.3s ease-in-out;
 }
 
 /*Section 1*/
@@ -152,6 +227,10 @@ body, html {
     justify-content: center;
     align-items: center;
     padding: 50px 0;
+  }
+
+  #video-size {
+    width: 70%;
   }
 
   #video-ad video {
