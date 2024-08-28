@@ -41,6 +41,8 @@ body, html {
   overflow: hidden;
   position: relative;
   width: 100%;
+
+  top: 1%;
 }
 
 .topnav #container {
@@ -72,6 +74,7 @@ body, html {
   width: 250px;
   height: 40px;
 
+  text-align: center;
   border-radius: 20px;
   margin-left: 5%;
   border-style: none;
@@ -81,6 +84,7 @@ body, html {
   position: relative;
   background-image: url('./Images/icons/search_black_24dp.png');
   background-size: cover;
+  background-color: #f4f1ed;
   border-style: none;
 
   width: 30px;
@@ -288,10 +292,11 @@ body, html {
   display: flex;
   transition: transform 0.5s ease-in-out;
   width: calc(100% * (number of sneakers to display));
+  justify-content: center;
 }
 
-.sneaker {
-  width: 50%; 
+#top-sales .sneaker {
+  width: 25%; 
   margin: 0 25px;
 }
 
@@ -325,6 +330,7 @@ body, html {
 }
 
 .sneaker-info .price {
+  font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
   font-weight: bold;
 }
@@ -368,12 +374,14 @@ body, html {
 #shop-more {
   background-color: #f7f7f7;
   padding: 60px 0;
-  width: 90%;
+  width: 70%;
   border-radius: 15px;
   position: relative;
   overflow: hidden;
   margin-left: 70px;
   margin-right: 70px;
+  margin: 0 auto;
+  padding: 60px 0;
 }
 
 #shop-more h2 {
@@ -384,13 +392,15 @@ body, html {
   margin-bottom: 40px;
 }
 
-.sneaker-grid {
+#shop-more .sneaker-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
-.sneaker {
+#shop-more .sneaker {
+  width: 60%; 
+  margin: 0 25px;
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -574,12 +584,12 @@ body, html {
   }
   
   #clothing-coming-soon .comment-block {
-  margin-left: 4%;
+  margin-left: 2%;
   width: 30%;
   }
   
   #clothing-coming-soon .comment-block p {
-  font-size: 25px;
+  font-size: 20px;
   }
   
   #clothing-coming-soon .comment-block .dash {
@@ -603,7 +613,7 @@ body, html {
   font-size: 20px;
   text-align: center;
   margin-top: -10%;
-  margin-left: 17%;
+  margin-left: 13%;
   width: 69%;
   }
 /* section 7 */
