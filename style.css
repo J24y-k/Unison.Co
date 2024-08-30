@@ -20,6 +20,7 @@ body, html {
   background-color: #f4f1ed;
 }
 
+
 * {
   box-sizing: border-box;
 }
@@ -35,6 +36,121 @@ body, html {
   margin: 0 auto;
 }
 
+/* Top Navigation */
+.topnav {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  top: 1%;
+}
+
+.topnav #container {
+  position: relative;
+  display:flex ;
+  justify-content: space-between;
+  width: 96%;
+  margin-left: 2%;
+}
+
+.topnav #container .container-sides {
+  display: flex;
+  align-items: center;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav #search-container {
+  background-color: #ddd;
+  width: 250px;
+  height: 40px;
+
+  text-align: center;
+  border-radius: 20px;
+  margin-left: 5%;
+  border-style: none;
+}
+
+.topnav #search-logo {
+  position: relative;
+  background-image: url('./Images/icons/search_black_24dp.png');
+  background-size: cover;
+  background-color: #f4f1ed;
+  border-style: none;
+
+  width: 30px;
+  height: 30px;
+  margin-left: 1%;
+}
+
+.topnav #search-logo:hover {
+  background-image: url('./Images/icons/search_brown_24dp.png');
+  transition: background-image 0.3s ease-in-out;
+
+  cursor:pointer ;
+}
+
+.left-active {
+  margin-left: 20px;
+  color: white;
+}
+
+#left-side #title {
+  font-family: 'CatchyMager', sans-serif;
+  font-size: 40px;
+
+  padding: 0px;
+  padding-top: 10px;
+}
+
+.right-active {
+  margin-left: 20px;
+
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+#favorite-logo {
+  background-image: url('./Images/icons/favorite_black_24dp.png');
+  background-size: cover;
+}
+
+#favorite-logo:hover {
+  background-image: url('./Images/icons/favorite_brown_24dp.png');
+  transition: background-image 0.3s ease-in-out;
+}
+
+#cart-logo {
+  background-image: url('./Images/icons/shopping_cart_black_24dp.png');
+  background-size: cover;
+}
+
+#cart-logo:hover {
+  background-image: url('./Images/icons/shopping_cart_brown_24dp.png');
+  transition: background-image 0.3s ease-in-out;
+}
+
+#profile-logo {
+  background-image: url('./Images/icons/profile_black_24dp.png');
+  background-size: cover;
+}
+
+#profile-logo:hover {
+  background-image: url('./Images/icons/profile_brown_24dp.png');
+  transition: background-image 0.3s ease-in-out;
+}
+
+
 /*Section 1 - Welcome Section*/
 #background-logo {
   position: relative;
@@ -48,7 +164,7 @@ body, html {
   z-index: 2;
   position: absolute;
   width: 90%;
-  top: 15%;
+  top: 35%;
   left: 5%;
   text-align: center;
 }
@@ -58,18 +174,18 @@ body, html {
   font-family: 'CocoSharp', sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 #forward-text #main-text {
   font-size: 10rem;
   font-family: 'CatchyMager', sans-serif;
-  margin-top: 0px;
+  margin-top: 20px;
   margin-bottom: -2rem;
 }
 
 #forward-text #text-two {
-  margin-top: 0px;
+  margin-top: 20px;
   margin-bottom: 0px;
   font-size: 3rem;
   font-weight: lighter;
@@ -92,6 +208,16 @@ body, html {
 }
 
 /* Video Section */
+
+#video-ad .container{
+  background-color: #f7f7f7;
+  padding: 40px;
+  margin: 0 auto;
+  width: 60%;
+  box-shadow: 0px 0px 15px rgbs(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
 #video-ad {
   display: flex;
   justify-content: center;
@@ -100,7 +226,8 @@ body, html {
 }
 
 #video-ad video {
-  width: 60%;
+  width: 100%;
+  border-radius: 10px;
 }
 
 /* Section 2 - Welcome Message */
@@ -116,7 +243,8 @@ body, html {
 }
 
 #welcome-message .text {
-  width: 60%;
+  width: 80%;
+  margin-bottom: 10%;
 }
 
 #welcome-message h2 {
@@ -129,6 +257,7 @@ body, html {
   font-size: 18px;
   color: #555;
   font-family: 'CocoSharp';
+  margin-top: 10%;
 }
 
 #welcome-message img {
@@ -163,10 +292,11 @@ body, html {
   display: flex;
   transition: transform 0.5s ease-in-out;
   width: calc(100% * (number of sneakers to display));
+  justify-content: center;
 }
 
-.sneaker {
-  width: 50%; 
+#top-sales .sneaker {
+  width: 25%; 
   margin: 0 25px;
 }
 
@@ -200,14 +330,23 @@ body, html {
 }
 
 .sneaker-info .price {
+  font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
   font-weight: bold;
+}
+
+.sneaker-info .rating {
+  font-size: 14px;
+  color: #FFD700; /* Gold color for stars */
+  margin-top: 5px;
 }
 
 .carousel-prev,
 .carousel-next {
   position: absolute;
-  top: 50%;
+  margin-left: -6px;
+  margin-right: -7px;
+  top: 30%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -233,7 +372,15 @@ body, html {
 
 /* Section 4 - Shop More */
 #shop-more {
-  background-color: #f4f1ed;
+  background-color: #f7f7f7;
+  padding: 60px 0;
+  width: 70%;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin: 0 auto;
   padding: 60px 0;
 }
 
@@ -245,67 +392,52 @@ body, html {
   margin-bottom: 40px;
 }
 
-.sneaker-grid {
+#shop-more .sneaker-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
-.sneaker {
+#shop-more .sneaker {
+  width: 60%; 
+  margin: 0 25px;
   background-color: #fff;
   border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.sneaker-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.color-indicator {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-
-.save-tag {
-  background-color: #ff6347;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 15px;
-  font-size: 0.4rem;
+.sneaker:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .sneaker img {
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
 }
 
-.sneaker-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.sneaker-info {
+  padding: 20px;
+  text-align: center;
 }
 
 .sneaker .price {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: bold;
   color: #623e2a;
+  margin-bottom: 10px;
 }
 
 .sneaker .buy-now {
   background-color: #623e2a;
   color: #fff;
-  padding: 8px 12px;
+  padding: 8px 16px;
   border: none;
-  border-radius: 10px;
+  border-radius: 30px;
   cursor: pointer;
-  font-size: 5px;
+  font-size: 0.5rem;
 }
 
 .sneaker .buy-now:hover {
@@ -331,6 +463,7 @@ body, html {
 .hidden {
   display: none;
 }
+
 
 /* Section 5 Promos */
 
@@ -451,12 +584,12 @@ body, html {
   }
   
   #clothing-coming-soon .comment-block {
-  margin-left: 4%;
+  margin-left: 2%;
   width: 30%;
   }
   
   #clothing-coming-soon .comment-block p {
-  font-size: 25px;
+  font-size: 20px;
   }
   
   #clothing-coming-soon .comment-block .dash {
@@ -480,7 +613,7 @@ body, html {
   font-size: 20px;
   text-align: center;
   margin-top: -10%;
-  margin-left: 17%;
+  margin-left: 13%;
   width: 69%;
   }
 /* section 7 */
