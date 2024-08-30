@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Favorites</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="interact.js"></script>
+</head>
+<body>
+    <div class="topnav">
+        <div id="container">
+            <div id="left-side" class="container-sides">
+                <a href="#Home" id="title" class="left-active">
+                    UNISON.CO
+                </a>
+                    <input type="text" placeholder="Search.." id="search-container">
+                    <button id="search-logo"></button>
+            </div>
+            
+
+            <div id="right-side" class="container-sides">
+                <a href="#favorite">
+                    <button id="favorite-logo" class="right-active" onclick="goToFavorites()"></button>
+                </a>
+                <a href="#Cart">
+                    <div id="cart-logo" class="right-active"></div>
+                </a>
+                <a href="#Profile">
+                    <div id="profile-logo" class="right-active"></div>
+                </a>    
+            </div>
+        </div>
+    </div>
+
+    <h1>Favorites</h1>
+    <ul id="favorites-items">
+        </ul>
+    </body>
+</html>

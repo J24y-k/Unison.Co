@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'CocoSharp';
+    src: url('./../../fonts/Coco-Sharp-Regular-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'CatchyMager';
+    src: url('./../../fonts/CatchyMager-Normal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f1ed;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Top Navigation */
+.topnav {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  
+    top: 1%;
+  }
+  
+  .topnav #container {
+    position: relative;
+    display:flex ;
+    justify-content: space-between;
+    width: 96%;
+    margin-left: 2%;
+  }
+  
+  .topnav #container .container-sides {
+    display: flex;
+    align-items: center;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav #search-container {
+    background-color: #ddd;
+    width: 250px;
+    height: 40px;
+  
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 5%;
+    border-style: none;
+  }
+  
+  .topnav #search-logo {
+    position: relative;
+    background-image: url('./../../Images/icons/search_black_24dp.png');
+    background-size: cover;
+    background-color: #f4f1ed;
+    border-style: none;
+  
+    width: 30px;
+    height: 30px;
+    margin-left: 1%;
+  }
+  
+  .topnav #search-logo:hover {
+    background-image: url('./../../Images/icons/search_brown_24dp.png');
+    transition: background-image 0.3s ease-in-out;
+  
+    cursor:pointer ;
+  }
+  
+  .left-active {
+    margin-left: 20px;
+    color: white;
+  }
+  
+  #left-side #title {
+    font-family: 'CatchyMager', sans-serif;
+    font-size: 40px;
+  
+    padding: 0px;
+    padding-top: 10px;
+  }
+  
+  .right-active {
+    margin-left: 20px;
+  
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+  
+  #favorite-logo {
+    background-image: url('./../../Images/icons/favorite_black_24dp.png');
+    background-size: cover;
+  }
+  
+  #favorite-logo:hover {
+    background-image: url('./../../Images/icons/favorite_brown_24dp.png');
+    transition: background-image 0.3s ease-in-out;
+  }
+  
+  #cart-logo {
+    background-image: url('./../../Images/icons/shopping_cart_black_24dp.png');
+    background-size: cover;
+  }
+  
+  #cart-logo:hover {
+    background-image: url('./../../Images/icons/shopping_cart_brown_24dp.png');
+    transition: background-image 0.3s ease-in-out;
+  }
+  
+  #profile-logo {
+    background-image: url('./../../Images/icons/profile_black_24dp.png');
+    background-size: cover;
+  }
+  
+  #profile-logo:hover {
+    background-image: url('./../../Images/icons/profile_brown_24dp.png');
+    transition: background-image 0.3s ease-in-out;
+  }
+
