@@ -31,21 +31,28 @@ h1 {
 }
 
 #favorites-items{
-  background-color: aquamarine;
+  background-color: #f4f1ed;
   width: 90%;
   height: fit-content;
   margin: auto;
-
+  flex-wrap: wrap;
+  list-style: none;
   display: flex; 
   justify-content: space-between;
 }
 
-#item {
-  background-color: #fffdfd;
-  width: 22%;
-  height: 600px;
+#favorites-items li {
+  width: 25%; /* Adjust as needed based on your container width */
+padding: 10px;
+box-sizing: border-box;
 }
 
+/*&#item {
+  background-color: #fffdfd;
+  width: 22%;
+  height: 320px;
+}
+*/
 #image {
   width:100%;
   background-color: antiquewhite;
