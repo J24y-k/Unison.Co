@@ -208,7 +208,7 @@
   }
 
   .cart-content .bottom {
-    width: 85%;
+    width: 70%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -289,6 +289,31 @@
     font-size:x-large;
     font-weight: 500;
   }
+
+  #product-list #item #right {
+    background-color: aquamarine;
+    width: 15%;
+    height: 40px;
+    margin: auto;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #product-list #item #right p {
+    font-size: larger;
+  }
+
+  #product-list #item #remove-item {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    background-color: unset;
+    border-style: none;
+    font-size: larger;
+    color: rgb(173, 0, 0);
+  } 
 
   /* right side */
 
