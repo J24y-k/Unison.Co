@@ -110,7 +110,7 @@
                             <p class="brand">Airforce 1</p>
                             <p class="name">Valentine Pink</p>
                             <p class="price">R1 299.99</p>
-                            <p class="rating">★★★★★</p> <!-- 5-star rating -->
+                            <p class="rating">★★★★★</p> 
                         </div>
                     </div>
                 </div>
@@ -122,12 +122,12 @@
                             <p class="brand">New Balance</p>
                             <p class="name">Suede</p>
                             <p class="price">R1 499.99</p>
-                            <p class="rating">★★★★☆</p> <!-- 4-star rating -->
+                            <p class="rating">★★★★☆</p> 
                         </div>
                     </div>
                 </div>
 
-                <!-- Add more sneakers here as needed -->
+                <!-- we more sneakers here as needed -->
             </div>
 
             <!-- Arrows for sliding -->
@@ -135,6 +135,43 @@
             <button class="carousel-next">&#10095;</button>
         </div>
     </div>
+
+    <!-- Modal for Top Sales Section -->
+    <div id="topSalesModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-left">
+                <div class="modal-images">
+                    <img src="Images/AF1 B1.jpg" id="mainImage" alt="Sneaker Image">
+                    <!-- Additional images can be added here -->
+                </div>
+                <div class="modal-sneaker-info">
+                    <p id="modalSneakerName" class="name">Sneaker Name</p>
+                    <p id="modalSneakerPrice" class="price">Price</p>
+                    <p id="modalSneakerRating" class="rating">★★★★★</p>
+                </div>
+            </div>
+            <div class="modal-right">
+                <p>Size:</p>
+                <input type="number" id="sneakerSize" min="0" max="15" value="0">
+
+                <p>Colors:</p>
+                <div class="color-options">
+                    <span class="color-circle" style="background-color: white;"></span>
+                    <span class="color-circle" style="background-color: black;"></span>
+                    <span class="color-circle" style="background-color: brown;"></span>
+                    <span class="color-circle" style="background-color: green;"></span>
+                    <!-- Add more colors as needed -->
+                </div>
+
+                <div class="modal-actions">
+                    <button id="addToCart">Add to Cart</button>
+                    <button id="buyNow">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <span class="close">&times;</span>
+    </div>
+
 </section>
 
 <!--Section 4 Shop more-->
@@ -146,7 +183,8 @@
             <div class="sneaker">
                 <img src="Images/AF1 W1.jpg" alt="Sneaker 1">
                 <div class="sneaker-info">
-                    <p class="price">Airforce</p>
+                    <p class="name">Airforce 1</p>
+                    <p class="price">R999.99</p>
                     <button class="buy-now">Buy Now</button>
                 </div>
             </div>
@@ -154,7 +192,8 @@
             <div class="sneaker">
                 <img src="Images/AF1 W1.jpg" alt="Sneaker 2">
                 <div class="sneaker-info">
-                    <p class="price">Airforce</p>
+                    <p class="name">Airforce 1</p>
+                    <p class="price">R999.99</p>
                     <button class="buy-now">Buy Now</button>
                 </div>
             </div>
@@ -162,7 +201,8 @@
             <div class="sneaker">
                 <img src="Images/AF1 W1.jpg" alt="Sneaker 3">
                 <div class="sneaker-info">
-                    <p class="price">Airforce</p>
+                    <p class="name">Airforce</p>
+                    <p class="price">R999.99</p>
                     <button class="buy-now">Buy Now</button>
                 </div>
             </div>
@@ -170,7 +210,8 @@
             <div class="sneaker">
                 <img src="Images/AF1 W1.jpg" alt="Sneaker 4">
                 <div class="sneaker-info">
-                    <p class="price">Airforce</p>
+                    <p class="name">Airforce 1</p>
+                    <p class="price">R999.99</p>
                     <button class="buy-now">Buy Now</button>
                 </div>
             </div>
@@ -178,7 +219,8 @@
             <div class="sneaker">
                 <img src="Images/AF1 W1.jpg" alt="Sneaker 5">
                 <div class="sneaker-info">
-                    <p class="price">Airforce</p>
+                    <p class="name">Airforce 1</p>
+                    <p class="price">R999.99</p>
                     <button class="buy-now">Buy Now</button>
                 </div>
             </div>
@@ -186,7 +228,8 @@
             <div class="sneaker">
                 <img src="Images/AF1 W1.jpg" alt="Sneaker 6">
                 <div class="sneaker-info">
-                    <p class="price">Airforce</p>
+                    <p class="name">Airforce 1</p>
+                    <p class="price">R999.99</p>
                     <button class="buy-now">Buy Now</button>
                 </div>
             </div>
@@ -194,7 +237,8 @@
             <div class="sneaker">
                 <img src="Images/dunks 1.jpg" alt="Sneaker 8">
                 <div class="sneaker-info">
-                    <p class="price">Air Jordan</p>
+                    <p class="name">Air Jordan 1</p>
+                    <p class="price">R1 499.99</p>
                     <button class="buy-now">Buy Now</button>
                 </div>
             </div> 
@@ -202,7 +246,8 @@
             <div class="sneaker">
                 <img src="Images/dunks 1.jpg" alt="Sneaker 8">
                 <div class="sneaker-info">
-                    <p class="price">Air Jordan</p>
+                    <p class="name">Air Jordan 1</p>
+                    <p class="price">R1 499.99</p>
                     <button class="buy-now">Buy Now</button>
                 </div>
             </div> 
@@ -212,218 +257,280 @@
         <div id="more-sneakers" class="hidden">
         </div>
     </div>
+
+   <!-- Modal Window for Shop More Section -->
+    <div id="shopMoreModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeShopMoreModal">&times;</span>
+            <div class="modal-left">
+                <div class="image-slider">
+                    <img id="modalMainImage" src="Images/AF1 W1.jpg" alt="Sneaker Image 1">
+                    <img src="Images/AF1 W1.jpg" alt="Sneaker Image 2">
+                    <img src="Images/AF1 W1.jpg" alt="Sneaker Image 3">
+                </div>
+                <p class="modal-shoe-name" id="modalShoeName">SneakerName</p>
+                <p class="modal-shoe-price" id="modalShoePrice">100</p>
+            </div>
+            <div class="modal-right">
+                <label for="size">Size:</label>
+                <input type="number" id="size" name="size" min="0" max="15" value="0">
+
+                <p>Colors:</p>
+                <div class="color-options">
+                    <div class="color-circle" style="background-color: white;"></div>
+                    <div class="color-circle" style="background-color: black;"></div>
+                    <div class="color-circle" style="background-color: brown;"></div>
+                    <div class="color-circle" style="background-color: green;"></div>
+                </div>
+
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
 </section>
 
 
-    <!-- Sixth Page: Promos -->
-    <section id="promos">
-        <div class="container">
-    
-            <div class="carousel-container">
-                <h2>Promos</h2>
-                <div class="promo-container">
-                    <div class="promo">
-                        <img src="Images/this.jpg" alt="Promo 1">
-                        <div class="promo-info-container">
-                            <p class="title">Low Dunks</p>
-                            <p class="description">Buy any two of these for only R2 500</p>
-                        </div>
+   <!-- Sixth Page: Promos -->
+<section id="promos">
+    <div class="container">
+        <div class="carousel-container">
+            <h2>Promos</h2>
+            <div class="promo-container">
+                <!-- Promo 1 -->
+                <div class="promo" onclick="openPromoModal(1)">
+                    <img src="Images/NEW1.jpg" alt="Low Dunks">
+                    <div class="promo-info-container">
+                        <p class="title">Low Dunks</p>
+                        <p class="description">Buy any two of these for only R2 500</p>
                     </div>
-    
-                    <div class="promo">
-                        <img src="Images/this.jpg" alt="Promo 2">
-                        <div class="promo-info-container">
-                            <p class="title">Low Dunks</p>
-                            <p class="description">Buy any two of these for only R2 500</p>
-                        </div>
-                    </div>
-    
-                    <div class="promo">
-                        <img src="Images/this.jpg" alt="Promo 3">
-                        <div class="promo-info-container">
-                            <p class="title">Low Dunks</p>
-                            <p class="description">Buy any two of these for only R2 500</p>
-                        </div>
-                    </div>
-    
-                    <!-- Add more promos here as needed -->
                 </div>
-    
-                <!-- Arrows for sliding -->
-                <button class="carousel-prev">&#10094;</button>
-                <button class="carousel-next">&#10095;</button>
+
+                <!-- Promo 2 -->
+                <div class="promo" onclick="openPromoModal(2)">
+                    <img src="Images/Grey fog 1.jpg" alt="High Dunks">
+                    <div class="promo-info-container">
+                        <p class="title">High Dunks</p>
+                        <p class="description">Get 30% off on a second pair</p>
+                    </div>
+                </div>
+
+                <!-- Promo 3 -->
+                <div class="promo" onclick="openPromoModal(3)">
+                    <img src="Images/airmax90 1.jpg" alt="Air Max">
+                    <div class="promo-info-container">
+                        <p class="title">Air Max</p>
+                        <p class="description">Special offer: Buy one get one at 50% off</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Arrows for sliding -->
+            <button class="carousel-prev">&#10094;</button>
+            <button class="carousel-next">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Modal for Promos -->
+    <div id="promoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePromoModal()">&times;</span>
+            <div class="modal-left">
+                <!-- Left side: Images and Shoe details -->
+                <div class="image-carousel">
+                    <img id="promoImage" src="" alt="Sneaker Image">
+                </div>
+                <h2 id="promoName">Shoe Name</h2>
+                <p id="promoPrice">Price: R0</p>
+            </div>
+            <div class="modal-right">
+                <!-- Right side: Info about the sneakers and promo explanation -->
+                <div class="promo-explanation">
+                    <h3>Promo Details</h3>
+                    <p id="promoDescription">Details about the promotion.</p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
     
     
 
     <!-- Seventh Page: Clothing -->
-    <section id="clothing-coming-soon">
-        <div class="container">
-            <img src="Images/squad.jpg" >
+<section id="clothing-coming-soon">
+    <div class="container">
+        <div id="clothing-slideshow">
+            <img src="Images/squad.jpg" alt="Clothing Image 1" >
+            <img src="Images/squad.jpg" alt="Clothing Image 2" >
+            <img src="Images/squad.jpg" alt="Clothing Image 3" >
+            <img src="Images/squad.jpg" alt="Clothing Image 4" >
+            <img src="Images/squad.jpg" alt="Clothing Image 5" >
+        </div>
 
+        <div class="main-content">
+            <div class="text">
+                <h1>Clothing Brand coming in
+                    <br>soon
+                </h1>
 
-            <div class="main-content">
-                <div class="text">
-                    <h1>Clothing Brand coming in
-                        <br>soon
-                    </h1>
+                <div class="comments">
+                    <div class="comment-block">
+                        <p class="comment">
+                            Dressing well is a form of good manners
 
-                    <div class="comments">
-                        <div class="comment-block">
-                            <p class="comment">
-                               Dressing well is a form of good manners
+                        </p>
 
-                            </p>
+                        <p class="dash">
+                            -
+                        </p>
 
-                            <p class="dash">
-                                -
-                            </p>
-    
-                            <p class="commentator">
-                                Tom Ford
-                            </p>
-                        </div>
-
-                        <div class="comment-block">
-                            <p class="comment">
-                               Style is a way to say who you are without having to speak
-                            </p>
-
-                            <p class="dash">
-                                -
-                            </p>
-    
-                            <p class="commentator">
-                               Rachel Zoe
-                            </p>
-                        </div>
-
-                        <div class="comment-block">
-                            <p class="comment">
-                              Elegance is not standing out, but being remembered
-                            </p>
-
-                            <p class="dash">
-                                -
-                            </p>
-    
-                            <p class="commentator">
-                              Giorgio Armani
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="slogan-container" >
-                        <p class="slogan">
-                            Your perfect fit is on the horizon! Our new clothing line is coming 
-                            soon—stay tuned for premium quality and standout designs.
+                        <p class="commentator">
+                            Tom Ford
                         </p>
                     </div>
 
+                    <div class="comment-block">
+                        <p class="comment">
+                            Style is a way to say who you are without having to speak
+                        </p>
+
+                        <p class="dash">
+                            -
+                        </p>
+
+                        <p class="commentator">
+                            Rachel Zoe
+                        </p>
+                    </div>
+
+                    <div class="comment-block">
+                        <p class="comment">
+                            Elegance is not standing out, but being remembered
+                        </p>
+
+                        <p class="dash">
+                            -
+                        </p>
+
+                        <p class="commentator">
+                            Giorgio Armani
+                        </p>
+                    </div>
                 </div>
+
+                <div class="slogan-container" >
+                    <p class="slogan">
+                        Your perfect fit is on the horizon! Our new clothing line is coming 
+                        soon—stay tuned for premium quality and standout designs.
+                    </p>
+                </div>
+
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Eighth Page: About Us -->
-    <section id="about-us">
-        <div class="container">
-            <p id="titre">
-                UNISON.CO
-            </p>
+<section id="about-us">
+    <div class="container">
+        <p id="titre">
+            UNISON.CO
+        </p>
 
-            <div id="about-us-container">
-                <div id="inline-container">
-                    <p id="about-us-title">ABOUT US</p>
-                    <p id="content">
-                        Unison.Co is a premier online fashion destination, offering a diverse selection of trendy fashion wear such as (Nike, Adidas,
-                        Converse, Vans and many more) including our own exclusive self-branded collection
-                        Our commitment si to supply our customers with the finest apparel at competitive prices, ensuring every purchase meets
-                        the highest standards of quality and affordability
+        <div id="about-us-container">
+            <div id="inline-container">
+                <p id="about-us-title">ABOUT US</p>
+                <p id="content">
+                    Unison.Co is a premier online fashion destination, offering a diverse selection of trendy fashion wear such as (Nike, Adidas,
+                    Converse, Vans and many more) including our own exclusive self-branded collection
+                    Our commitment si to supply our customers with the finest apparel at competitive prices, ensuring every purchase meets
+                    the highest standards of quality and affordability
+                </p>
+            </div>
+        </div>
+
+        <div id="boxes">
+            <div id="our-vision" class="box">
+                <div class="inline-container">
+                    <p class="box-titles">Our Vision</p>
+                    <p class="box-text">
+                        Our vision is to transform our
+                        brand into a symbol of
+                        empowerment and cultural
+                        significance for the youth. By
+                        cultivating a strong community
+                        and lifestyle brand
                     </p>
                 </div>
             </div>
 
-            <div id="boxes">
-                <div id="our-vision" class="box">
-                    <div class="inline-container">
-                        <p class="box-titles">Our Vision</p>
-                        <p class="box-text">
-                            Our vision is to transform our
-                            brand into a symbol of
-                            empowerment and cultural
-                            significance for the youth. By
-                            cultivating a strong community
-                            and lifestyle brand
-                        </p>
-                    </div>
-                </div>
-
-                <div id="our-services" class="box">
-                    <div class="inline-container">
-                        <p class="box-titles">Our Services</p>
-                        <p class="box-text">
-                            <ul> <li>Wide range of premium apparel and footwear</li>
-                                <li>Free delivery in selected areas</li>
-                                <li>Customer support and satisfaction</li>
-                                <li>Exclusive discounts and promotions</li>
-                            </ul>
-                            
-                        </p>
-                    </div>
-                </div>
-
-                <div id="why-choose-us" class="box">
-                    <div class="inline-container">
-                        <p class="box-titles">Why choose us</p>
-                        <p class="box-text">
-                            <ul>
-                                <li>Commitment to quality</li>
-                                <li>Affordable pricing</li>
-                                <li>Exceptional customer service</li>
-                                <li>Free delivery in selected areas</li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-
-                <div id="why-choose-us" class="box">
-                    <div class="inline-container">
-                        <p class="box-titles">Our Aim</p>
-                        <p class="box-text">
-                            We aim to establish a long lasting
-                            connection with our audience,
-                            enabling us to offer a wide range
-                            of products that resonate with
-                            them on a deeper level
-                        </p>
-                    </div>
-                </div>
-
-                <div id="get-social" class="box">
-                    <div class="inline-container">
-                        <p class="box-titles">Get Social</p>
-                        <p class="box-text">
-                            <div class="social-icons">
-                                <a href="https://wa.me/+27745192332"><img src="Images/images.png" alt="WhatsApp"></a>
-                                <a href="https://www.instagram.com/unison_co"><img src="Images/IG.png" alt="Instagram"></a>
-                                <a href="https://www.tiktok.com/@unison.co01"><img src="Images/tiktok.png" alt="TikTok"></a>
-                                <a href="mailto:unison.co2024@gmail.com"><img src="Images/email.png" alt="Email"></a>
-                            </div>
-                            <p class="social-message">Don't hesitate to reach us for more information.</p>
-                        </p>
-                    </div>
+            <div id="our-services" class="box">
+                <div class="inline-container">
+                    <p class="box-titles">Our Services</p>
+                    <p class="box-text">
+                        <ul> <li>Wide range of premium apparel and footwear</li>
+                            <li>Free delivery in selected areas</li>
+                            <li>Customer support and satisfaction</li>
+                            <li>Exclusive discounts and promotions</li>
+                        </ul>
+                        
+                    </p>
                 </div>
             </div>
 
-            <div id="reviews">
-                <h2>Leave a comment on your experience with US</h2>
-                <textarea id="feedback" placeholder="type here"></textarea>
+            <div id="why-choose-us" class="box">
+                <div class="inline-container">
+                    <p class="box-titles">Why choose us</p>
+                    <p class="box-text">
+                        <ul>
+                            <li>Commitment to quality</li>
+                            <li>Affordable pricing</li>
+                            <li>Exceptional customer service</li>
+                            <li>Free delivery in selected areas</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div id="why-choose-us" class="box">
+                <div class="inline-container">
+                    <p class="box-titles">Our Aim</p>
+                    <p class="box-text">
+                        We aim to establish a long lasting
+                        connection with our audience,
+                        enabling us to offer a wide range
+                        of products that resonate with
+                        them on a deeper level
+                    </p>
+                </div>
+            </div>
+
+            <div id="get-social" class="box">
+                <div class="inline-container">
+                    <p class="box-titles">Get Social</p>
+                    <p class="box-text">
+                        <div class="social-icons">
+                            <a href="https://wa.me/+27745192332"><img src="Images/images.png" alt="WhatsApp"></a>
+                            <a href="https://www.instagram.com/unison_co"><img src="Images/IG.png" alt="Instagram"></a>
+                            <a href="https://www.tiktok.com/@unison.co01"><img src="Images/tiktok.png" alt="TikTok"></a>
+                            <a href="mailto:unison.co2024@gmail.com"><img src="Images/email.png" alt="Email"></a>
+                        </div>
+                        <p class="social-message">Don't hesitate to reach us for more information.</p>
+                    </p>
+                </div>
             </div>
         </div>
-    </section>
+
+        <div id="reviews">
+            <h2>Leave a comment on your experience with US</h2>
+            <textarea id="feedback" placeholder="type here"></textarea>
+        </div>
+    </div>
+</section>
 
     <!-- JavaScript to handle interactivity -->
     <script src="script.js"></script>
