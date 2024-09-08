@@ -182,6 +182,7 @@ body, html {
   font-family: 'CatchyMager', sans-serif;
   margin-top: 20px;
   margin-bottom: -2rem;
+  color: #000;
 }
 
 #forward-text #text-two {
@@ -189,6 +190,7 @@ body, html {
   margin-bottom: 0px;
   font-size: 3rem;
   font-weight: lighter;
+  color: #000;
 }
 
 #forward-text #learn-more {
@@ -322,12 +324,22 @@ body, html {
 .sneaker-info .brand {
   font-size: 20px;
   color: #333;
+  font-family: 'CocoSharp', sans-serif;
+}
+
+.sneaker-info .brand span.number {
+  font-family: 'Courier New', Courier, monospace; /* Use a monospace font for numbers */
 }
 
 .sneaker-info .name {
   font-size: 10px;
   color: #777;
 }
+
+/* trying to fix the numbes here too */
+
+
+
 
 .sneaker-info .price {
   font-family: 'Courier New', Courier, monospace;
@@ -369,12 +381,125 @@ body, html {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Modal Container for top sales */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+
+/* Modal Left Side */
+.modal-left {
+  width: 60%;
+}
+
+.modal-images img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.modal-sneaker-info .name {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.modal-sneaker-info .price {
+  font-size: 22px;
+  color: #623e2a;
+}
+
+.modal-sneaker-info .rating {
+  color: #FFD700;
+  font-size: 20px;
+}
+
+/* Modal Right Side */
+.modal-right {
+  width: 35%;
+}
+
+.modal-right p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#sneakerSize {
+  width: 60px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.color-options {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid #623e2a;
+}
+
+.modal-actions button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #623e2a;
+  color: white;
+}
+
+#buyNow {
+  background-color: #623e2a;
+}
+
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 /* Section 4 - Shop More */
 #shop-more {
   background-color: #f7f7f7;
   padding: 60px 0;
-  width: 70%;
+  width: 90%;
   border-radius: 15px;
   position: relative;
   overflow: hidden;
@@ -430,6 +555,20 @@ body, html {
   margin-bottom: 10px;
 }
 
+/* trying to fix the numbers looking weird*/
+.sneaker .name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #623e2a;
+  font-family: 'CocoSharp', sans-serif; 
+  font-feature-settings: "tnum"; 
+  font-family: 'CocoSharp', sans-serif;
+font-variant-numeric: tabular-nums;
+font-family: 'CocoSharp', sans-serif;
+font-family: 'Arial', sans-serif;
+}
+
+
 .sneaker .buy-now {
   background-color: #623e2a;
   color: #fff;
@@ -464,8 +603,124 @@ body, html {
   display: none;
 }
 
+/* Modal Container */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-left {
+  width: 50%;
+}
+
+.modal-right {
+  width: 45%;
+}
+
+.image-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+}
+
+.image-slider img {
+  width: 100%;
+  border-radius: 10px;
+  scroll-snap-align: start;
+}
+
+.modal-shoe-name, .modal-shoe-price {
+  font-size: 1.5rem;
+  color: #623e2a;
+  margin: 10px 0;
+}
+
+.modal-right label {
+  font-weight: bold;
+  display: block;
+  margin-top: 20px;
+}
+
+.modal-right input[type=number] {
+  width: 60px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.color-options {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.add-to-cart, .buy-now {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #623e2a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.add-to-cart:hover, .buy-now:hover {
+  background-color: #42301a;
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 /* Section 5 Promos */
+
+#promo-section h1, #promo-section p {
+  color: #613e2a;
+  background-color: white;
+  
+}
 
 #promos {
   padding: 60px 0;
@@ -537,25 +792,145 @@ body, html {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Modal styling promo */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+.modal-left, .modal-right {
+  width: 48%;
+}
+
+.image-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-carousel img {
+  width: 80%; 
+  height: auto; 
+  max-width: 300px; 
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #623e2a;
+}
+
+.size-container {
+  margin-bottom: 20px;
+}
+
+.color-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.color-circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.add-to-cart, .buy-now {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  background-color: #623e2a;
+  cursor: pointer;
+}
+
+.add-to-cart:hover, .buy-now:hover {
+  background-color: #83543a;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 
-/* Section 6 */
+
+/* Section 6 clothing brand */
 
 #clothing-coming-soon .container {
   position: relative;
-  height:fit-content ;
-  margin-bottom: 0px;
-  
+  min-height: 120vh;
   color: white;
+  top: -10px;
   }
   
   #clothing-coming-soon img {
-  width: 90%;
-  position: relative;
-  margin-left: 4%;
+  width: 100%;
   opacity: 0.9;
+  top: 20px;
   }
   
+#clothing-slideshow {
+  position: relative;
+  width: 90%;
+  height: 710px;
+  margin-left: 4%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#clothing-slideshow img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#clothing-slideshow img.active {
+  opacity: 1;
+}
+
   #clothing-coming-soon .main-content {
   z-index: 2;
   width: 100%;
@@ -616,28 +991,42 @@ body, html {
   margin-left: 13%;
   width: 69%;
   }
-/* section 7 */
 
+  #clothing-coming-soon h1 {
+    color: white; 
+    font-size: 60px;
+  }
+  
+  #clothing-coming-soon .main-content {
+    background-color: rgba(97, 63, 45, 0.5); 
+  }
+  
+  #clothing-coming-soon p {
+    color: white; 
+  }
+
+/* section 7 - About Us */
 #about-us {
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   background-color: #623e2a;
-  }
-  
-  #about-us .container {
+}
+
+#about-us .container {
   width: 95%;
   margin-top: -60px;
-  }
-  
-  #about-us #titre {
+}
+
+#about-us #titre {
   margin-top: 5%;
   font-family: 'CatchyMager', sans-serif;
   font-size: 32px; 
-  }
-  
-  #about-us-container {
+  color: white; 
+}
+
+#about-us-container {
   width: 100%;
   margin-bottom: 5%;
   display: flex;
@@ -645,67 +1034,74 @@ body, html {
   align-items: center;
   border-style: solid;
   border-width: 1px;
-  }
-  
-  #about-us-container #inline-container {
+  border-color: white; 
+}
+
+#about-us-container #inline-container {
   width: 95%;
   height: 80%;
-  }
-  
-  #about-us-container #about-us-title {
+}
+
+#about-us-container #about-us-title {
   font-size: 20px; 
   font-weight: 800;
-  }
-  
-  #about-us-container #content {
+  color: white; 
+}
+
+#about-us-container #content {
   font-size: 15px; 
   line-height: 1.5; 
   font-weight: lighter;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  
-  #about-us #boxes {
+  color: white; 
+}
+
+#about-us #boxes {
   display: flex;
-  }
-  
-  #about-us .box {
+}
+
+#about-us .box {
   width: 20%;
   border-width: 1px;
   border-style: solid;
+  border-color: white; 
   margin-left: 1%;
   display: flex;
   justify-content: center;
   align-items: center;
-  }
-  
-  #about-us .box .inline-container {
+}
+
+#about-us .box .inline-container {
   width: 90%;
   height: 90%;
-  }
-  
-  #about-us .box-titles {
+}
+
+#about-us .box-titles {
   font-size: 15px;
   font-weight: 700;
-  }
-  
-  #about-us .box-text {
+  color: white; 
+}
+
+#about-us .box-text {
   font-size: 12px;
   font-weight: 200;
-  }
-  
-  #about-us .social-icons {
+  color: white; 
+}
+
+#about-us .social-icons {
   display: flex;
   justify-content: center; 
   align-items: center; 
   gap: 15px; 
   margin-top: 20px; 
-  }
-  
-  #about-us .social-icons img {
+}
+
+#about-us .social-icons img {
   width: 30px; 
   height: 30px; 
   object-fit: contain; 
-  }
+}
+
   
   
   
@@ -735,4 +1131,3 @@ body, html {
   #reviews #feedback::placeholder {
   color: #999;
   }
-  
