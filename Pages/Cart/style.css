@@ -24,7 +24,7 @@
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #ffff;
+    background-color: #f4f1ed;
   }
 
   * {
@@ -199,7 +199,7 @@
   }
 
   .cart-content .title {
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
     margin-top: -30px;
@@ -323,6 +323,14 @@
     font-weight: 500;
   }
 
+  #product-list #item #center button:hover {
+    border-width: 2px;
+    font-size: 30px;
+    font-weight: 700;
+
+    cursor: pointer;
+  }
+
   #product-list #item #right {
     width: 15%;
     height: 40px;
@@ -345,8 +353,14 @@
     border-style: none;
     font-size: larger;
     color: red;
-    
+    font-weight: 500;
   } 
+
+  #product-list #item #remove-item:hover {
+    font-weight: 700;
+    font-size: 30px;
+    cursor: pointer;
+  }
 
   /* advertising */
 
@@ -367,12 +381,17 @@
     
   }
 
+  #advert-container img {
+    border-radius: 25px;
+  }
+
   /* right side */
 
   .right-side {
-    background-color: #f4f3f9;
+    background-color: #afafb2;
+    border-radius: 25px;
     width: 30%;
-    height: 200px;
+    height: 300px;
   }
 
   .right-side #content-container {
@@ -382,6 +401,32 @@
     margin: auto;
   }
 
-  .right-side #total-price {
-    font-size: 20px;
+  .right-side a {
+    text-decoration: none;
+  }
+
+  .right-side #button {
+    background-color: #000;
+    color: azure;
+    border-radius: 25px;
+    text-align: center;
+    align-content: center;
+
+    width: 100%;
+    height: 20%;
+    position: relative;
+    bottom: -25%;
+  }
+
+  .right-side #button:hover {
+    background-color: #262626;
+  }
+
+  .right-side .sub-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .right-side #total {
+    margin-bottom: -10%;
   }
