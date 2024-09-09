@@ -12,16 +12,24 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: 'Roboto-Regular';
+    src: url(./../../fonts/Roboto/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+  }
+
   body, html {
     font-size: 16px;
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #f4f1ed;
+    background-color: #ffff;
   }
 
   * {
     box-sizing: border-box;
+    font-family: 'Roboto-Regular';
   }
 
   /* Top Navigation */
@@ -173,7 +181,7 @@
     max-height: fit-content;
 
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-radius: 40px;
     margin-bottom: 70px;
   }
@@ -194,15 +202,18 @@
     width: 30%;
     display: flex;
     justify-content: space-between;
+    margin-top: -30px;
+    margin-bottom: -40px;
   }
 
   .cart-content #cart-title {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:x-large;
+    font-size:50px;
+    font-weight: bold;
   }
 
   .cart-content #products-number {
-    font-size: small;
+    font-size: 16px;
     font-weight: 300;
     margin: auto;
     margin-left: 20px;
@@ -213,13 +224,24 @@
     background-color: unset;
     color: red;
     margin-right: 20px;
+    font-size: 20px;
+    font-weight:500;
+  }
+
+  .cart-content .top button:hover {
+    font-weight:700;
+    cursor: pointer;
   }
 
   .cart-content .bottom {
     width: 70%;
     margin: auto;
+    margin-bottom: -25px;
     display: flex;
     justify-content: space-between;
+
+    font-size: 20px;
+    font-weight: 700;
   }
 
   .cart-content ul {
@@ -250,8 +272,13 @@
     display: flex;
   }  
 
+  #product-list li {
+    font-weight: 700;
+  } 
+
   #product-list #item img {
     width: 100px;
+    border-radius: 20px;
   }
 
   #product-list #item #description {
@@ -265,7 +292,7 @@
 
   #product-list #item #description #item-price {
     font-size: small;
-    opacity: 0.6;
+    opacity: 0.4;
   }
 
   #product-list #item #center {
@@ -289,7 +316,7 @@
     background-color: unset;
     border-style: solid;
     border-color: #000;
-    border-width: 2px;
+    border-width: 1px;
     border-radius: 20px;
 
     font-size:x-large;
@@ -317,13 +344,44 @@
     background-color: unset;
     border-style: none;
     font-size: larger;
-    color: rgb(173, 0, 0);
+    color: red;
+    
   } 
+
+  /* advertising */
+
+  #advert-container {
+    width: 100%;
+    min-height: 200px;
+    border-radius: 50px;
+    
+    margin-top: 30px;
+    padding-bottom: 100px;
+  }
+
+  #advertising {
+    width: 100%;
+    border-radius: 50px;
+    margin: 20px;
+    margin-left: 0px;
+    
+  }
 
   /* right side */
 
   .right-side {
-    background-color: bisque;
+    background-color: #f4f3f9;
     width: 30%;
-    height: 100px;
+    height: 200px;
+  }
+
+  .right-side #content-container {
+    width: 90%;
+    height: 90%;
+
+    margin: auto;
+  }
+
+  .right-side #total-price {
+    font-size: 20px;
   }
