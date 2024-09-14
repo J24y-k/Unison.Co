@@ -234,3 +234,71 @@ interactiveButtons.forEach(button => {
         }, 300);
     });
 });
+
+// my account// 
+document.addEventListener('DOMContentLoaded', function() {
+    // Get elements
+    const loginToggle = document.getElementById('login-toggle');
+    const registerForm = document.getElementById('register-form');
+    const loginForm = document.getElementById('login-form');
+
+    // Toggle between registration and login forms
+    loginToggle.addEventListener('click', function() {
+        registerForm.style.display = 'none';
+        loginForm.style.display = 'block';
+    });
+});
+
+loginToggle.addEventListener('click', function() {
+    alert('Login clicked!');
+    registerForm.style.display = 'none';
+    loginForm.style.display = 'block';
+});
+
+//my orders//
+
+// Simulate login status
+const isLoggedIn = true;  // Change this to simulate logged in/out status
+const hasOrders = false;  // Change this to simulate if the user has orders or not
+
+// Get elements
+const loginReminder = document.getElementById('login-reminder');
+const noOrders = document.getElementById('no-orders');
+const ordersList = document.getElementById('orders-list');
+
+// Check if the user is logged in
+if (!isLoggedIn) {
+    loginReminder.style.display = 'block';
+    ordersList.style.display = 'none';
+} else {
+    // If logged in, check if they have orders
+    if (!hasOrders) {
+        noOrders.style.display = 'block';
+        ordersList.style.display = 'none';
+    } else {
+        noOrders.style.display = 'none';
+        ordersList.style.display = 'block';
+
+        // Example: Adding Orders Dynamically
+        const pendingOrders = document.getElementById('pending-orders');
+        const completedOrders = document.getElementById('completed-orders');
+
+        // Sample order data
+        let orders = [
+            { id: '1234', item: 'Airforce 1 plain white', status: 'pending' },
+            { id: '5678', item: 'Jordan 1', status: 'completed' }
+        ];
+
+        // Populate orders dynamically
+        orders.forEach(order => {
+            let li = document.createElement('li');
+            li.innerText = `Order #${order.id} - ${order.item} (${order.status.charAt(0).toUpperCase() + order.status.slice(1)})`;
+
+            if (order.status === 'pending') {
+                pendingOrders.appendChild(li);
+            } else {
+                completedOrders.appendChild(li);
+            }
+        });
+    }
+}
