@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- top navigation -->
+    <div class="topnav">
+        <div id="container">
+            <div id="left-side" class="container-sides">
+                <a href="./index.html" id="title" class="left-active">UNISON.CO</a>
+                <input type="text" placeholder="Search.." id="search-container">
+                <button id="search-logo"></button>
+            </div>
+
+            <div id="right-side" class="container-sides">
+                <a href="./Pages/Favorites/favorites-page.html">
+                    <div id="favorite-logo" class="right-active"></div>
+                </a>
+                <a href="#Cart">
+                    <div id="cart-logo" class="right-active"></div>
+                </a>
+                <a href="#Profile">
+                    <div id="profile-logo" class="right-active"></div>
+                </a>  
+
+                <div id="profile-dropdown" class="dropdown-content">
+                    <a href="my-account.html">My Account</a>
+                    <a href="my-orders.html">My Orders</a>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <!-- Check if user is logged in -->
+    <div id="order-section">
+        <h2>My Orders</h2>
+        <!-- If user is not logged in -->
+        <div id="login-reminder" style="display: none;">
+            <p>Please <a href="login.html">login</a> to view your orders.</p>
+        </div>
+
+        <!-- If user has no orders -->
+        <div id="no-orders" style="display: none;">
+            <p>YOU HAVE NOT PLACED ANY ORDERS YET</p>
+        </div>
+
+        <!-- If user has orders -->
+        <div id="orders-list">
+            <h3>Pending Orders</h3>
+            <ul id="pending-orders">
+                <!-- Dynamic content will be generated here -->
+            </ul>
+
+            <h3>Completed Orders</h3>
+            <ul id="completed-orders">
+                <!-- Dynamic content will be generated here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

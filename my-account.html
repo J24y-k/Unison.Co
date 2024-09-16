@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- top navigation -->
+    <div class="topnav">
+        <div id="container">
+            <div id="left-side" class="container-sides">
+                <a href="./index.html" id="title" class="left-active">
+                    UNISON.CO 
+                </a>
+                    <input type="text" placeholder="Search.." id="search-container">
+                    <button id="search-logo"></button>
+            </div>
+
+            <div id="right-side" class="container-sides">
+                <a href="./Pages/Favorites/favorites-page.html">
+                    <div id="favorite-logo" class="right-active"></div>
+                </a>
+                <a href="#Cart">
+                    <div id="cart-logo" class="right-active"></div>
+                </a>
+                <a href="#Profile">
+                    <div id="profile-logo" class="right-active"></div>
+                </a>  
+                
+                <div id="profile-dropdown" class="dropdown-content">
+                    <a href="my-account.html">My Account</a>
+                    <a href="my-orders.html">My Orders</a>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <!-- My Account Section -->
+    <div class="account-container">
+        <h2>Register Now</h2>
+        
+        <form id="register-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input type="submit" value="Register">
+        </form>
+
+        <p id="login-prompt">
+            Already have an account? <span id="login-toggle" class="underline">Login</span>
+        </p>
+
+        <form id="login-form" style="display:none;">
+            <h2>Login</h2>
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="login-email" required><br><br>
+
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="login-password" required><br><br>
+
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <div id="profile-details" style="display:none;">
+        <h2>Update Profile</h2>
+
+        <form id="user-info-form">
+            <label for="profile-pic">Upload Profile Picture:</label>
+            <input type="file" id="profile-pic" name="profile-pic" accept="image/*"><br><br>
+
+            <h3>Account Details</h3>
+            <label for="bank-details">Bank Account Number:</label>
+            <input type="text" id="bank-details" name="bank-details" required><br><br>
+
+            <label for="payment-method">Preferred Payment Method:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">Bank Transfer</option>
+            </select><br><br>
+
+            <input type="submit" value="Save Details">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
