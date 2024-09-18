@@ -150,6 +150,140 @@ body, html {
   transition: background-image 0.3s ease-in-out;
 }
 
+/* Dropdown Container */
+#profile-dropdown {
+  display: none;
+  position: absolute;
+  right: 10px; 
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+/* Dropdown Links */
+#profile-dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+
+#profile-dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+a:hover + #profile-dropdown, #profile-dropdown:hover {
+  display: block;
+}
+
+/* Center the account forms ALL FOR MY ACCOUNT SEC*/
+.account-container, #profile-details {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Basic styling for input fields */
+input[type="text"], input[type="tel"], input[type="email"], input[type="password"], select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+  color: blue;
+}
+
+#profile-details {
+  display: none;
+}
+
+/* General Styles for orders */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h2, h3 {
+  text-align: center;
+  color: #333;
+}
+
+/* Orders Section */
+#order-section {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+/* Login Reminder */
+#login-reminder {
+  text-align: center;
+  font-size: 18px;
+  color: #f00;
+}
+
+#login-reminder a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+#login-reminder a:hover {
+  text-decoration: underline;
+}
+
+/* No Orders Message */
+#no-orders {
+  text-align: center;
+  font-size: 20px;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* Orders List */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 10px;
+  margin: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Pending and Completed Orders */
+h3 {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #333;
+  text-align: left;
+  padding-left: 10px;
+}
+
+#orders-list {
+  margin-top: 20px;
+}
+
 
 /*Section 1 - Welcome Section*/
 #background-logo {
