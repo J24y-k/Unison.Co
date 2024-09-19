@@ -150,35 +150,6 @@ body, html {
   transition: background-image 0.3s ease-in-out;
 }
 
-/* Dropdown Container */
-#profile-dropdown {
-  display: none;
-  position: absolute;
-  right: 10px; 
-  background-color: white;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 5px;
-}
-
-/* Dropdown Links */
-#profile-dropdown a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font-size: 16px;
-}
-
-#profile-dropdown a:hover {
-  background-color: #f1f1f1;
-}
-
-a:hover + #profile-dropdown, #profile-dropdown:hover {
-  display: block;
-}
-
 /* Center the account forms ALL FOR MY ACCOUNT SEC*/
 .account-container, #profile-details {
   max-width: 400px;
